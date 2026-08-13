@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Inscriptions - MAM'en poule</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- BANDEAU DE NAVIGATION -->
+    <header class="navbar">
+        <a href="index.html" class="logo"><img src="images/logo.png" alt="Logo MAM'en poule"></a>
+        
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="activites.html">Activités</a></li>
+                <li><a href="vision.html">Vision</a></li>
+                <li><a href="a-propos.html">À propos</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- EN-TÊTE DE LA PAGE -->
+    <section class="page-header">
+        <h1>Contactez-nous</h1>
+        <p>Une question ? Une demande d'information ou de pré-inscription ? Écrivez-nous, nous vous répondrons rapidement.</p>
+    </section>
+
+    <!-- CONTENU CONTACT (FORMULAIRE + INFOS) -->
+    <main class="content-container">
+        <div class="contact-wrapper">
+
+            <!-- BLOC FORMULAIRE DE CONTACT -->
+            <section class="contact-form-card">
+                <h2>Envoyez-nous un message</h2>
+                
+                <form action="https://formsubmit.co/mahebaptiste6@gmail.com" method="POST" class="contact-form">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="https://example.com/merci.html">
+                    <div class="form-group">
+                        <label for="name">Nom & Prénom *</label>
+                        <input type="text" id="name" name="name" placeholder="Ex: Marie Dupont" required>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Adresse Email *</label>
+                            <input type="email" id="email" name="email" placeholder="Ex: marie@exemple.fr" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Téléphone</label>
+                            <input type="tel" id="phone" name="phone" placeholder="Ex: 06 12 34 56 78">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="child-age">Âge de l'enfant (ou date du terme)</label>
+                        <input type="text" id="child-age" name="child-age" placeholder="Ex: 6 mois / Terme prévu en Novembre">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Votre Message *</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Précisez votre besoin (jours de garde souhaités, questions...)" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-cta btn-submit">Envoyer le message</button>
+                </form>
+            </section>
+
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+
+            <div class="footer-col">
+                <a href="index.html" class="logo footer-logo"><img src="images/logo.png" alt="Logo MAM'en poule"></a>
+                <p>Un cocon bienveillant et sécurisé pour l'épanouissement et l'éveil de vos tout-petits au quotidien.</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <ul class="footer-contact">
+                    <li>📍 12 Rue des Petits Poussins, 75000 Paris</li>
+                    <li>📞 01 23 45 67 89</li>
+                    <li>✉️ contact@mamenpoule.fr</li>
+                    <li>⏰ Lun - Ven : 07h30 – 18h30</li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Liens Utiles</h4>
+                <ul class="footer-links">
+                    <li><a href=#>Déclaration des cookies</a></li>
+                    <li><a href=#>Mentions légales</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; MAM'en poule - Conçu par Baptiste MAHÉ - Tous droits réservés.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

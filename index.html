@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAM'en poule</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <a href="index.html" class="logo"><img src="images/logo.png" alt="Logo MAM'en poule"></a>
+        
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Accueil</a></li>
+                <li><a href="activites.html">Activités</a></li>
+                <li><a href="vision.html">Vision</a></li>
+                <li><a href="a-propos.html">À propos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="welcome">
+        <h1>Bienvenue à MAM'en <span>poule</span></h1>
+        <!--<p>Découvrez nos services, notre histoire et notre savoir-faire à travers les différents onglets de notre site.</p>
+        <a href="#" class="btn-cta">En savoir plus</a>-->
+    </main>
+
+    <!-- SECTION PRÉSENTATION DU LIEU (AVEC CARROUSEL) -->
+    <section class="lieu-section">
+        <div class="content-container lieu-wrapper">
+            
+            <!-- Carrousel d'images dynamique -->
+            <div class="lieu-carousel-container">
+                
+                <!-- Badge flottant 
+                <div class="lieu-badge-floating">
+                    <span>🏠 120 m²</span>
+                    <p>dédiés à l'épanouissement</p>
+                </div> -->
+
+                <div class="carousel">
+                    <!-- Slides (Images) -->
+                    <div class="carousel-track">
+                        <div class="carousel-slide active">
+                            <img src="images/Maison1.jpg" alt="Grande pièce de vie lumineuse">
+                            <span class="slide-caption">Grande pièce de vie & jeux</span>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="images/Maison2.jpg" alt="Espace extérieur et jardin">
+                            <span class="slide-caption">Jardin clos & sécurisé</span>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="images/Maison3.jpg" alt="Dortoir apaisant pour la sieste">
+                            <span class="slide-caption">Chambres & dortoirs paisibles</span>
+                        </div>
+                    </div>
+
+                    <!-- Boutons de navigation (Flèches) -->
+                    <button class="carousel-btn prev-btn" aria-label="Image précédente">&#10094;</button>
+                    <button class="carousel-btn next-btn" aria-label="Image suivante">&#10095;</button>
+
+                    <!-- Puces de navigation (Dots) -->
+                    <div class="carousel-dots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Texte de présentation -->
+            <div class="lieu-text">
+                <span class="z-badge">Le Cocon</span>
+                <h2>Un lieu de vie chaleureux et sécurisé</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nisl eget ultricies tincidunt, nunc nisl aliquam nisl, eget ultricies nunc nisl eget nunc.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nisl eget ultricies tincidunt, nunc nisl aliquam nisl, eget ultricies nunc nisl eget nunc.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="map-container">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d492.7381638747603!2d-0.593377837181375!3d47.31302298632021!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4807d2410b4625e7%3A0x964f4c370f1521b7!2sRue%20de%20Bel%20air%2C%2049750%20Beaulieu-sur-Layon%2C%20France!5e1!3m2!1sfr!2ses!4v1784934701548!5m2!1sfr!2ses" 
+            width="600" 
+            height="450" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="strict-origin-when-cross-origin">
+        </iframe>
+    </div>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+
+            <div class="footer-col">
+                <a href="index.html" class="logo footer-logo"><img src="images/logo.png" alt="Logo MAM'en poule"></a>
+                <p>Un cocon bienveillant et sécurisé pour l'épanouissement et l'éveil de vos tout-petits au quotidien.</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <ul class="footer-contact">
+                    <li>📍 12 Rue des Petits Poussins, 75000 Paris</li>
+                    <li>📞 01 23 45 67 89</li>
+                    <li>✉️ contact@mamenpoule.fr</li>
+                    <li>⏰ Lun - Ven : 07h30 – 18h30</li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Liens Utiles</h4>
+                <ul class="footer-links">
+                    <li><a href=#>Déclaration des cookies</a></li>
+                    <li><a href=#>Mentions légales</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; MAM'en poule - Conçu par Baptiste MAHÉ - Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
