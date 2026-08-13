@@ -41,3 +41,37 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    // Vérifie si l'utilisateur est déjà venu
+    if (!sessionStorage.getItem("hasVisited")) {
+        // Si c'est la 1ère fois, on affiche la modale après un court délai (0.5s)
+        setTimeout(() => {
+            document.getElementById("welcome-modal").classList.add("active");
+        }, 500);
+        
+        // On enregistre qu'il est venu
+        sessionStorage.setItem("hasVisited", "true");
+    }
+});
+
+function closeWelcomeModal() {
+    document.getElementById("welcome-modal").classList.remove("active");
+}
+
+// On intercepte la soumission du formulaire de contact
+document.querySelector(".contact-form").addEventListener("submit", function(e) {
+    e.preventDefault(); // Empêche le rechargement de la page
+    
+    // ICI : Si vous utilisez un service AJAX (comme Formspree ou Web3Forms), envoyez les données ici
+    
+    // On affiche la fenêtre de remerciement
+    document.getElementById("thanks-modal").classList.add("active");
+    
+    // On vide les champs du formulaire
+    this.reset();
+});
+
+function closeThanksModal() {
+    document.getElementById("thanks-modal").classList.remove("active");
+}

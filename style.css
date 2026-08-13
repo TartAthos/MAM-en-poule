@@ -792,6 +792,93 @@ body {
     margin-bottom: 0.3rem;
 }
 
+/* --- STYLES DES MODALES (POPUPS) --- */
+
+/* Arrière-plan sombre semi-transparent */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(45, 58, 47, 0.6);
+    /* Utilise la teinte sombre de votre palette */
+    backdrop-filter: blur(4px);
+    /* Effet flouté très doux en arrière-plan */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+
+    /* Animation de disparition par défaut */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+/* État affiché */
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Boîte de la fenêtre */
+.modal-content {
+    background-color: #ffffff;
+    padding: 2.5rem;
+    border-radius: 20px;
+    max-width: 450px;
+    width: 90%;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+    border: 1px solid var(--habillage-color);
+
+    /* Animation d'ouverture (effet de zoom doux) */
+    transform: scale(0.8);
+    transition: transform 0.3s ease;
+}
+
+.modal-overlay.active .modal-content {
+    transform: scale(1);
+}
+
+.modal-content h2 {
+    color: var(--title-color);
+    font-size: 1.6rem;
+    margin-bottom: 0.8rem;
+}
+
+.modal-content p {
+    color: var(--text-color);
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+}
+
+.modal-icon {
+    font-size: 3rem;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+/* Bouton de fermeture (Croix 'X' en haut à droite) */
+.modal-close {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    color: var(--text-muted);
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.modal-close:hover {
+    color: var(--accent-color);
+}
+
 /* RESPONSIVE DESIGN */
 @media (max-width: 900px) {
     .activites-grid {
